@@ -1,0 +1,112 @@
+<div class="col s6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="discover.jpg" height="350">
+                        <span class="card-title">Discover What's New Today!</span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Discover What's New Today!<i class="material-icons right">close</i></span>
+                        <p>Check out some of the projects our collaborators have in store.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="linked.jpg" height="350">
+                        <span class="card-title">Meet Sohaib!</span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Meet Sohaib!<i class="material-icons right">close</i></span>
+                        <p>Do you want to learn about Robotics? Feel free to leave me a message!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.linkedin.com/in/muhammad-sohaib-bin-kashif-a992a5226/">My LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+----------------------------------------------------------------------------
+(router.js)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//API for testing only...
+
+router.get('/', (req, res) => {
+    res.send("Hello from router. Getting resources from API for all projects...")
+});
+
+//Passing a parameter in a functions; we can also pass data with jQuery as well...
+router.get('/:id', (req, res) => {
+    res.send("Hello from router. Getting all resources from API for Project " + req.params.id + ".");
+});
+
+router.post('/', (req, res) =>{
+    res.sendStatus(204);
+});
+
+router.put('/:id', (req, res) => {
+    res.sendStatus("Hello from project update" + req.params.id + "resouces API.");
+});
+
+router.delete('/:id', (req, res) => {
+    res.send("Hello from project delete" + req.params.id + " resources API");
+});
+ */
+
+
+
+
+ --------------------------------------------------------------------------------------------
+ (Controller.js)
+
+ /*
+
+//Export the two functions from this script...
+module.exports = {
+    getProjects,
+    insertProject
+}
+
+/*
+let getAllProjects = (res) => {
+    projectsCollection.find().toArray((err, result) => {
+        if (err) throw err;
+        res.send(result);
+    });
+}
+
+const getProjectByID = (id, res) => {
+    projectsCollection.find().toArray((err, result) => {
+        if (err) throw err;
+        res.send(result);
+    });
+}
+
+const InsertProject = (project, res) => {
+    projectsCollection.insertOne(project, (err, result) => {
+        if (err) throw err;
+        //Sending the result status...
+        res.send({ result: 204 });
+    });
+}
+*/

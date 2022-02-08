@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Robotics Hut - Projects</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper" style=" background-color: darkcyan; padding:30px; height: 120px">
+            <img src="/images/R.png" alt="R" width="70" height="70">
+            <a href="#" class="brand-logo" style=" padding-left:20px">The Robotics Hut</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="order.html">Order Items</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style=" background-color: darkgray">
+        <!--Heading for the Webpage-->
+        <div>
+            <h1 style=" padding: 50px; text-align: center"> Projects </h1>
+            <p style="padding: 30px;"> We created this website to have some of the amazing 
+            robotics projects where people can stay in touch and share their contributions
+            with the world. You can be one of us or even blog here your findings, just for
+            the interest of robotics.</p>
+        </div>
+
+        <!--Modal.html-->
+        <div class="row center" style="padding-top:20px;">
+
+            <!-- Modal Trigger -->
+            <button data-target="modal1" class="btn modal-trigger">Share a new project with us</button>
+        
+        </div>
+
+        <div style="padding: 30px;">
+            <p>These are some of the Project Lists we like to share here...</p>
+            
+            <!--Creating our project list. Check the env-about.js file -->
+            <div class="row" id="projectlist">
+
+                <!--Generating our project list here...-->
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="padding:30px; background-color: darkcyan">
+        <div class="footer-copyright">
+            <div class="container" style=" color:white ;text-align:center">
+                © 2021 Copyright The Robotics Hut
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom Environemnt Script -->
+    <script src="/js/env-projects.js"></script>
+</body>
+
+</html>
+
+
+<!--Using a Modal Object for a project creating feature...-->
+<div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Share with us a new project!</h4>
+            <p> Please provide us some details about your working project.</p>
+        </div>
+
+        <!--Project Details Inserted here!-->
+        <div class="input-field column s12">
+            <input value="" id="name" type="text" class="validate">
+            <label class="name" for="name">Name: </label>
+        </div>
+        <div class="input-field column s12">
+            <input value="" id="title" type="text" class="validate">
+            <label class="title" for="title">Project Title: </label>
+        </div>
+        <div class="input-field column s12">
+            <input value="" id="description" type="text" class="validate">
+            <label class="username" for="description">Project Description: </label>
+        </div>
+        <div class="input-field column s12">
+            <input value="" id="image" type="text" class="validate">
+            <label class="username" for="image">Project Image: </label>
+        </div>
+
+        <div class="modal-footer">
+            <a onclick="newProject()" class="modal-close waves-effect waves-green btn-flat">Okay</a>
+        </div>
+    </div>
+</div>

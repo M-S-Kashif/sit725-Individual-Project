@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Project Shop - Order Items</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-wrapper" style=" background-color: darkcyan; padding:30px; height: 120px">
+            <img src="/images/R.png" alt="R" width="70" height="70">
+            <a href="#" class="brand-logo" style=" padding-left:20px">The Project Shop</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding: 20px; background-color: lightgray">
+        <!--Heading for the Webpage-->
+        <div>
+            <h1 style=" padding: 50px; text-align: center">
+                Order Items
+            </h1>
+        </div>
+
+        <p>
+            If there is any item you wish to order for your projects, please let us know!
+            Do fill us in on the credentials and your whereabouts. Please mention the contents
+            of your items by adding in the values.
+        </p>
+
+        <div class="row">
+            <form class="col s12" action="/contact.html" method="post">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="first_name">First Name</label>
+                        <input id="first_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" type="text" class="validate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" class="validate">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="home_addr">Home Address</label>
+                        <input id="home_addr" type="text" class="validate">
+                    </div>
+                </div>
+
+                <h5>Please fill us in on the contents of your purchase: </h5>
+                <p>Please follow these instructions:</p>
+                <ul>
+                    <li> Add the name of the item you want</li>
+                    <li> Mention the number of those items you want in your order</li>
+                    <li> In the same line, mention the three digit code of each item as well.</li>
+                    <li> Click on 'Submit Order' to send your items and please take a screen shot of your order to future referencing.</li>
+                </ul>
+                <p> Each item should look something like this <br> e.g Wires Bundle (3 rolls) + (W11)</p>
+                <br> <br>
+                <div class="row">
+                    <div class="input-field col s12" style="align-content:center; padding:10px">
+                        <label for="order_list" style="color:black; text-decoration-thickness: auto"> Order List </label>
+                        <br><br>
+                        <textarea id="order_list" class="validate"></textarea>
+                    </div>
+                </div>
+                <a class="waves-effect waves-light btn" id="send-order-btn">Submit Order</a>
+                <br><br><br><br>
+            </form>
+
+            <br><br>
+            <div>
+                <h5>Further Suggestions: </h5>
+                <div class="smallcolumn">
+                    <div class="card small" style="margin: 5px; width: 300px; height: 350px">
+                        <div class="card-image">
+                            <img src="images/rpi4.jpg" width="300" height="270">
+                            <span class="card-title" style="color:lightseagreen">Raspberry Pi</span>
+                        </div>
+                        <div class="card-content">
+                            <p id="item-details-1">Rpi4 (1 boxing with essentials) + (M14)</p>
+                        </div>
+                        <div class="card-action">
+                            <a id="btn-1">Add item</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smallcolumn">
+                    <div class="card small" style="margin: 5px; width: 300px; height: 350px">
+                        <div class="card-image">
+                            <img src="images/docking.jpeg" width="300" height="270">
+                            <span class="card-title" style="color:lightseagreen">Docker Station</span>
+                        </div>
+                        <div class="card-content">
+                            <p id="item-details-2">HP Docking Station (1 boxing) + (D05)</p>
+                        </div>
+                        <div class="card-action">
+                            <a id="btn-2">Add item</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smallcolumn">
+                    <div class="card small" style="margin: 5px; width: 300px; height: 350px">
+                        <div class="card-image">
+                            <img src="images/components.jpg" width="300" height="270">
+                            <span class="card-title" style="color:lightseagreen">Component Jars</span>
+                        </div>
+                        <div class="card-content">
+                            <p id="item-details-3">Components Jar (1 box of resistors, capacitors, and ICs) + (C55)</p>
+                        </div>
+                        <div class="card-action">
+                            <a id="btn-3">Add item</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="smallcolumn">
+                    <div class="card small" style="margin: 5px; width: 300px; height: 350px">
+                        <div class="card-image">
+                            <img src="images/HDD.jpg" width="300" height="270">
+                            <span class="card-title" style="color:lightseagreen"> Hard Drive </span>
+                        </div>
+                        <div class="card-content">
+                            <p id="item-details-4">Hard Drive (1 TB HDD) + (H43)</p>
+                        </div>
+                        <div class="card-action">
+                            <a id="btn-4">Add item</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="order-reciept">
+            <hr>
+            <!--Reciept will be generated here-->
+        </div>
+    </main>
+
+    <footer style="padding:30px; background-color: darkcyan">
+        <div class="footer-copyright">
+            <div class="container" style=" color:white ;text-align:center">
+                � 2021 Copyright The Project Shop
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="/js/env-order.js"></script>
+</body>
+
+</html>

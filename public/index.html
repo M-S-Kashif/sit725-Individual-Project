@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Project Shop</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper" style=" background-color: darkcyan; padding:30px; height: 120px">
+            <img src="/images/R.png" alt="R" width="70" height="70">
+            <a href="#" class="brand-logo" style=" padding-left:20px">The Project Shop</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="order.html">Order Items</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style=" background-color: darkgray">
+        <!--Heading for the Webpage-->
+        <div>
+            <h1 style=" padding: 50px; text-align: center">
+                Welcome to my new Robotics Page!
+            </h1>
+        </div>
+
+        <!--Main with Two Columns-->
+        <div class="row">
+            <div class="column mainText">
+                <p>
+                    This is the Main Page of our new website. It's still a work in progress but this is how the main page looks like.
+                    This page also has some pages linked on the nav bar as a part of the demo. However, they are not too important at the moment.
+                </p>
+            </div>
+
+            <div class="column">
+                <img src="/images/robot.jpg" alt="robot" height="350">
+            </div>
+        </div>
+
+        <!--Creating some cards-->
+        <div class="row" id="cardcontents">
+
+            <!--Generating our Cards with components here...-->
+
+        </div>
+    </main>
+
+    <footer style="padding:30px; background-color: darkcyan">
+        <div class="footer-copyright">
+            <div class="container" style=" color:white ;text-align:center">
+                © 2021 Copyright The Project Shop
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- socket IO Served by the server -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Custom Environemnt Script -->
+    <script src="/js/env-index.js"></script>
+
+</body>
+
+</html>

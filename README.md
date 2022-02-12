@@ -46,3 +46,81 @@ Please follow these instructions to set up your repository on your device:
 ## Installing Dependencies on the Terminal
 Now you are to install a couple of dependencies for your project to be fully functional. Please refer to the commands for the Terminal below:
 
+Now you are to install a couple of dependencies for your project to be fully functional. Please refer to the commands for the Terminal below:
+
+```bash
+  npm install --save body-parser chai express express-session
+  npm install --save fs-extra mocha mongodb node-fetch 
+  npm install --save nodemailer nodemailer-mailgun-transport nodemon
+  npm install --save request
+```
+
+After Installation, please ensure from your Package.json file for the Dependencies. This is how it will look (versions can differ) like:
+
+```bash
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "fs-extra": "^10.0.0",
+    "mocha": "^9.1.4",
+    "mongodb": "^4.3.0",
+    "node-fetch": "^3.2.0",
+    "nodemailer": "^6.7.2",
+    "nodemailer-mailgun-transport": "^2.1.3",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2"
+  }
+```
+
+## Creating scripts for the Terminal:
+On the same file, we will now create a few scripts from the commands we already have (kinda...). 
+Please ensure that these changes are available on the Package.json file:
+
+```bash
+  "scripts": {
+    "start": "node server.js",
+    "start-dev": "nodemon server.js",
+    "test": "mocha --reporter spec"
+  }
+```
+
+We can now use these commands to run our application. This is how it is done:
+
+```bash
+  npm run start
+```
+
+In case you want to test the application. This is the command for the Terminal:
+
+```bash
+  npm run test
+```
+
+In case you want to contribute the application. This is the command for the Terminal:
+
+```bash
+  npm run start-dev
+```
+
+## Moment of Truth:
+Now you will finally run the command for starting your application. Please head afterwards to the 
+browser and type in the URL:
+
+```bash
+  http://localhost:8080/
+```
+
+
+## License
+
+This is the license we have for our Repository
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Authors
+
+[Muhammad Sohaib bin Kashif](https://github.com/M-S-Kashif)
+
+
